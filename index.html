@@ -117,6 +117,79 @@
     /* -----------------------------------------------------------
        7. الفوتر والأنيميشن (Footer & Animations)
     ----------------------------------------------------------- */
+    /* -----------------------------------------------------------
+       7. الشريط الجانبي للروابط (Social Sidebar)
+    ----------------------------------------------------------- */
+    .side-social-bar {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        z-index: 1001;
+        background: rgba(30, 41, 59, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 0 15px 15px 0;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        border-left: none;
+        padding: 10px 5px;
+    }
+    .side-item {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        transition: 0.3s;
+        margin: 5px 0;
+    }
+    .side-item:hover { color: #10B981; transform: translateX(5px); }
+    .side-item .tooltip {
+        position: absolute;
+        left: 55px;
+        background: #10B981;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 8px;
+        font-size: 12px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .side-item:hover .tooltip { opacity: 1; left: 60px; }
+
+    /* قسم الروابط الكامل (Full Links Section) */
+    .links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+        text-align: left;
+    }
+    .link-card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #334155;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .link-card:hover { border-color: #10B981; transform: translateY(-5px); background: #243146; }
+    .link-card i { font-size: 30px; min-width: 40px; text-align: center; }
+    .link-info h4 { margin: 0; color: #fff; font-size: 16px; }
+    .link-info p { margin: 5px 0 0; color: #94a3b8; font-size: 12px; }
+
     footer { text-align: center; padding: 40px 0; background: #0a0f1d; border-top: 1px solid #1e293b; color: #94a3b8; }
     .support-btn { position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px; background: #3b82f6; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4); z-index: 1000; text-decoration: none; animation: pulse-only 2s infinite; }
 
@@ -139,6 +212,18 @@
 
 <body>
     <div id="coins-container"></div>
+
+    <!-- Floating Social Sidebar -->
+    <div class="side-social-bar">
+        <a class="side-item" href="https://t.me/TOP5_Platform" target="_blank"><i class="fab fa-telegram"></i><span class="tooltip">Daily Signals - القناة اليومية</span></a>
+        <a class="side-item" href="https://t.me/malika_win_signal" target="_blank"><i class="fas fa-gem"></i><span class="tooltip">Malika Signals - قسم مليكة</span></a>
+        <a class="side-item" href="https://t.me/top5_signal_to_send" target="_blank"><i class="fas fa-signal"></i><span class="tooltip">Top 5 Signals - قسم توب فايف</span></a>
+        <a class="side-item" href="https://t.me/top5_fifa_tread" target="_blank"><i class="fas fa-futbol"></i><span class="tooltip">Football Betting - مراهنات الكرة</span></a>
+        <a class="side-item" href="https://www.facebook.com/profile.php?id=61592928230901" target="_blank"><i class="fab fa-facebook"></i><span class="tooltip">Facebook - فيسبوك</span></a>
+        <a class="side-item" href="https://www.instagram.com/top5_platform/" target="_blank"><i class="fab fa-instagram"></i><span class="tooltip">Instagram - انستجرام</span></a>
+        <a class="side-item" href="https://www.youtube.com/@Your_information48_" target="_blank"><i class="fab fa-youtube"></i><span class="tooltip">YouTube - يوتيوب</span></a>
+        <a class="side-item" href="https://t.me/TOP5_Customer_Servics" target="_blank"><i class="fas fa-headset"></i><span class="tooltip">Support - خدمة العملاء</span></a>
+    </div>
 
     <a class="support-btn" href="https://t.me/TOP5_Customer_Servics" target="_blank">
         <i class="fas fa-headset"></i>
@@ -184,6 +269,9 @@
             <h2 class="section-title">
                 <i class="fas fa-coins" style="color:#ffd700"></i> Download Official App <i class="fas fa-dollar-sign" style="color:#10B981"></i>
             </h2>
+            <p style="color: #94a3b8; font-weight: bold; margin-bottom: 20px;">
+                <i class="fas fa-network-wired" style="color:#3b82f6"></i> Supported Network: <span style="color:#ef4444">TRON (TRC20)</span> | USDT & TRX
+            </p>
 
             <div class="btn-container">
                 <a class="dl-btn" href="https://github.com/Hossam48o/top5_platform/releases/download/v2.0.0.6/top5_platform.apk" onclick="startDownload(event, this)">
@@ -214,19 +302,84 @@
                     <p class="bonus-desc">Get up to 50% extra bonus</p>
                 </div>
                 <div class="bonus-rates">
-                    <div class="rate-row"><span class="rate-amount">50$</span><span class="rate-percent">+10%</span></div>
-                    <div class="rate-row"><span class="rate-amount">100$</span><span class="rate-percent">+20%</span></div>
-                    <div class="rate-row"><span class="rate-amount">300$</span><span class="rate-percent">+35%</span></div>
-                    <div class="rate-row"><span class="rate-amount gold">500$+</span><span class="rate-percent">+50%</span></div>
+                    <div class="rate-row"><span class="rate-amount">50 USDT</span><span class="rate-percent">+10%</span></div>
+                    <div class="rate-row"><span class="rate-amount">100 USDT</span><span class="rate-percent">+20%</span></div>
+                    <div class="rate-row"><span class="rate-amount">300 USDT</span><span class="rate-percent">+35%</span></div>
+                    <div class="rate-row"><span class="rate-amount gold">500+ USDT</span><span class="rate-percent">+50%</span></div>
                 </div>
             </div>
 
             <div class="payouts-card">
                 <div class="payouts-header"><i class="fas fa-history"></i> RECENT PAYOUTS</div>
                 <div class="payouts-list" id="payouts-list">
-                    <div class="payout-row"><span>User: player***72</span><span class="payout-val">$45.00 <i class="fas fa-check-circle"></i></span></div>
-                    <div class="payout-row"><span>User: win_pro***</span><span class="payout-val">$120.00 <i class="fas fa-check-circle"></i></span></div>
-                    <div class="payout-row"><span>User: king_t5***</span><span class="payout-val">$350.00 <i class="fas fa-check-circle"></i></span></div>
+                    <div class="payout-row"><span>User: player***72</span><span class="payout-val">45.00 USDT <i class="fas fa-check-circle"></i></span></div>
+                    <div class="payout-row"><span>User: win_pro***</span><span class="payout-val">120.00 USDT <i class="fas fa-check-circle"></i></span></div>
+                    <div class="payout-row"><span>User: king_t5***</span><span class="payout-val">350.00 USDT <i class="fas fa-check-circle"></i></span></div>
+                </div>
+            </div>
+
+            <!-- قسم الروابط والمجتمع -->
+            <div id="community-links" style="margin-top: 60px;">
+                <h2 class="section-title"><i class="fas fa-users" style="color:#3b82f6"></i> Our Community & Signals</h2>
+                <p style="color:#94a3b8; margin-bottom: 30px;">Join our official channels for daily profit and support</p>
+
+                <div class="links-grid">
+                    <a href="https://t.me/TOP5_Platform" class="link-card" target="_blank">
+                        <i class="fab fa-telegram" style="color: #24A1DE;"></i>
+                        <div class="link-info">
+                            <h4>Daily Signals</h4>
+                            <p>قناة الإشارة للصفقة اليومية - أرباح مضمونة يومياً</p>
+                        </div>
+                    </a>
+                    <a href="https://t.me/malika_win_signal" class="link-card" target="_blank">
+                        <i class="fas fa-gem" style="color: #FF69B4;"></i>
+                        <div class="link-info">
+                            <h4>Malika Section</h4>
+                            <p>قناة إشارات قسم مليكة - استراتيجيات خاصة</p>
+                        </div>
+                    </a>
+                    <a href="https://t.me/top5_signal_to_send" class="link-card" target="_blank">
+                        <i class="fas fa-signal" style="color: #10B981;"></i>
+                        <div class="link-info">
+                            <h4>Top 5 Signals</h4>
+                            <p>قناة إشارات قسم توب فايف - تحليل فني دقيق</p>
+                        </div>
+                    </a>
+                    <a href="https://t.me/top5_fifa_tread" class="link-card" target="_blank">
+                        <i class="fas fa-futbol" style="color: #fff;"></i>
+                        <div class="link-info">
+                            <h4>Football Betting</h4>
+                            <p>قناة مراهنات كرة القدم - توقعات وتحليلات رياضية</p>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61592928230901" class="link-card" target="_blank">
+                        <i class="fab fa-facebook" style="color: #1877F2;"></i>
+                        <div class="link-info">
+                            <h4>Facebook Page</h4>
+                            <p>صفحتنا الرسمية على فيسبوك - آخر الأخبار والتحديثات</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/top5_platform/" class="link-card" target="_blank">
+                        <i class="fab fa-instagram" style="color: #E4405F;"></i>
+                        <div class="link-info">
+                            <h4>Instagram</h4>
+                            <p>حسابنا الرسمي على انستجرام - صور وفيديوهات حصرية</p>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/@Your_information48_" class="link-card" target="_blank">
+                        <i class="fab fa-youtube" style="color: #FF0000;"></i>
+                        <div class="link-info">
+                            <h4>YouTube Channel</h4>
+                            <p>قناتنا التعليمية على يوتيوب - شروحات ودروس مجانية</p>
+                        </div>
+                    </a>
+                    <a href="https://t.me/TOP5_Customer_Servics" class="link-card" target="_blank">
+                        <i class="fas fa-headset" style="color: #3b82f6;"></i>
+                        <div class="link-info">
+                            <h4>Customer Service</h4>
+                            <p>الدعم الفني المباشر - نحن هنا لخدمتكم 24/7</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
