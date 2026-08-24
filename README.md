@@ -1,16 +1,30 @@
-# Trading Network - top5_platform
+# Trading Network - TOP 5 Platform
 
-
-Official smart contract and assets for the KOGE Network ecosystem.
+Official smart contract and assets for the TOP 5 Network ecosystem.
 
 ## Project Overview
-BNB48 Club Mirror (KOGE) is a governance and utility token designed for the BNB48 community.
+Trading platform (TOP 5) is a high-performance ecosystem for professional traders and gamers.
 
-## Token Details
+## App Details
 - **Name:** TOP 5
-- **Contract Address:** `0xe6df05CC6F17A36B247eddC22fe3b9cFCcE91714`
+- **Network:** Tron Network (TRC20)
+- **Currency:** USDT / TRX
+- **Purpose:** Secure deposits and fast withdrawals via Binance & Tron wallets.
 
-## Links
-- **Website:** [
-https://bnb48official-dot.github.io/-koge-network/)
-- **Whitepaper:** [https://bnb48official-dot.github.io/-koge-network/koge_whitepaper.pdf]
+## Official Links
+- **Website:** [https://top5-platform.github.io/top5_platform/](https://top5-platform.github.io/top5_platform/)
+- **Facebook:** [Official Facebook Page](https://www.facebook.com/profile.php?id=61592928230901)
+
+## Signal Channels
+Stay updated with our daily signals and specialized trading sections:
+
+- **Daily Signals (Global):** [Join TOP 5 Platform](https://t.me/TOP5_Platform) - قناة الإشارة للصفقة اليومية.
+- **Malika Signals:** [Join Malika Win Signal](https://t.me/malika_win_signal) - قناة إشارة قسم مليكة.
+- **Top 5 Priority Signals:** [Join TOP 5 Signals](https://t.me/top5_signal_to_send) - قناة إشارة قسم توب فايف.
+- **Football Betting:** [Join TOP 5 FIFA Tread](https://t.me/top5_fifa_tread) - قناة مراهنات كرة القدم.
+
+## Support & Service
+- **Customer Service:** [@TOP5_Customer_Servics](https://t.me/TOP5_Customer_Servics) - حساب خدمة العملاء الرسمي.
+
+---
+© 2026 TOP 5 Network | Powered by Tron Blockchain (TRC20).
