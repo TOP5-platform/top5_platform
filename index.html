@@ -1,20 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' dir='ltr' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html lang="en">
 <head>
-    <meta content='width=device-width, initial-scale=1' name='viewport'/>
-    <title><data:blog.pageTitle/></title>
-    
-    <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&amp;display=swap' rel='stylesheet'/>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' rel='stylesheet'/>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>TOP 5 PLATFORM | Official Site</title>
 
-    <b:include name='all-head-content'/>
-    <b:skin><![CDATA[
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+
+    <style>
     /* -----------------------------------------------------------
        1. إعدادات الموقع العامة (General Settings)
     ----------------------------------------------------------- */
-    #navbar-iframe, .navbar, .quickedit { display: none !important; }
-    
     body { background-color: #0f172a; color: #f8fafc; font-family: 'Cairo', sans-serif; margin: 0; padding: 0; direction: ltr; overflow-x: hidden; position: relative; }
     .wrapper { max-width: 1100px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 10; }
 
@@ -28,18 +26,18 @@
     ----------------------------------------------------------- */
     header { background: #1e293b; padding: 15px 0; border-bottom: 2px solid #10B981; position: relative; }
     .header-container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; }
-    
+
     .logo-container { display: flex; align-items: center; gap: 12px; }
     .logo-icon { color: #10B981; font-size: 30px; animation: pulse-glow 2s infinite; }
-    .logo-text-top { color: #000080; font-size: 32px; font-weight: 900; } 
+    .logo-text-top { color: #000080; font-size: 32px; font-weight: 900; }
     .logo-text-5 { color: #ffffff; font-size: 30px; font-weight: 900; margin-left: 2px; }
-    
+
     .header-info { display: flex; gap: 20px; align-items: center; }
     .info-box { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); padding: 5px 15px; border-radius: 10px; font-size: 13px; color: #10B981; font-weight: bold; }
     .info-box span { color: #fff; margin-left: 5px; }
 
     /* -----------------------------------------------------------
-       3. شريط الأخبار المتحرك (Ticker Bar) - تعديل حركة القطار
+       3. شريط الأخبار المتحرك (Ticker Bar)
     ----------------------------------------------------------- */
     .ticker-bar { background: #0f172a; border-bottom: 1px solid #1e293b; padding: 12px 0; overflow: hidden; white-space: nowrap; position: relative; z-index: 10; }
     .ticker-wrapper { display: flex; width: max-content; animation: ticker-move 40s linear infinite; }
@@ -57,9 +55,9 @@
     .download-section { padding: 40px 0; text-align: center; }
     .section-title { margin-bottom: 40px; font-size: 28px; font-weight: 900; display: flex; align-items: center; justify-content: center; gap: 15px; }
     .btn-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px; }
-    
+
     .dl-btn {
-        background: #1e293b; border: 1px solid #334155; border-radius: 20px; padding: 25px 20px; 
+        background: #1e293b; border: 1px solid #334155; border-radius: 20px; padding: 25px 20px;
         text-decoration: none; color: white; min-width: 220px; transition: 0.3s;
         display: flex; flex-direction: column; align-items: center; position: relative; overflow: hidden;
         cursor: pointer;
@@ -70,7 +68,6 @@
     .dl-btn i:not(.btn-bg-icon) { font-size: 28px; margin-bottom: 10px; color: #10B981; }
     .dl-btn b { font-size: 17px; font-weight: 900; }
 
-    /* ستايل شريط التقدم داخل الزر */
     .btn-loading-box { width: 100%; text-align: center; }
     .progress-wrap { width: 100%; height: 8px; background: #334155; border-radius: 10px; margin-top: 10px; overflow: hidden; position: relative; }
     .progress-fill { height: 100%; background: #10B981; width: 0%; border-radius: 10px; transition: width 10s linear; }
@@ -81,7 +78,7 @@
        5. كارت مكافأة الإيداع (Deposit Bonus Card)
     ----------------------------------------------------------- */
     .bonus-card {
-        background: #161e2e; border-radius: 20px; padding: 15px 25px; 
+        background: #161e2e; border-radius: 20px; padding: 15px 25px;
         max-width: 500px; margin: 30px auto; border: 1px solid #1e293b;
         display: flex; align-items: center; justify-content: space-between;
         position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -90,7 +87,7 @@
     .special-offer-tag { background: #FFD700; color: #000; padding: 4px 10px; border-radius: 6px; font-weight: 900; font-size: 11px; display: inline-block; margin-bottom: 10px; }
     .bonus-title { font-size: 28px; font-weight: 900; color: #fff; margin: 0; line-height: 1.1; letter-spacing: -1px; }
     .bonus-desc { color: #94a3b8; margin-top: 5px; font-size: 13px; }
-    
+
     .bonus-rates { flex: 1; background: rgba(30, 41, 59, 0.5); padding: 12px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.05); }
     .rate-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
     .rate-row:last-child { border: none; }
@@ -101,8 +98,8 @@
     /* -----------------------------------------------------------
        6. كارت السحوبات والسوشيال ميديا (Payouts & Social)
     ----------------------------------------------------------- */
-    .payouts-card { 
-        background: #1e293b; border-radius: 15px; padding: 20px; 
+    .payouts-card {
+        background: #1e293b; border-radius: 15px; padding: 20px;
         max-width: 500px; margin: 40px auto; border: 1px solid #334155;
         box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
@@ -127,184 +124,148 @@
     @keyframes rotate-icon { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
     @keyframes pulse-only { 0% { transform: scale(1); } 70% { transform: scale(1.1); } 100% { transform: scale(1); } }
-    
-    @media (max-width: 768px) { 
-        .header-info { display: none; } 
-        .header-container { justify-content: center; } 
+
+    @media (max-width: 768px) {
+        .header-info { display: none; }
+        .header-container { justify-content: center; }
         .section-title { font-size: 20px; flex-wrap: wrap; }
-        .bonus-card { flex-direction: row; text-align: left; gap: 10px; max-width: 95%; padding: 15px; } 
-        .bonus-title { font-size: 20px; } 
+        .bonus-card { flex-direction: row; text-align: left; gap: 10px; max-width: 95%; padding: 15px; }
+        .bonus-title { font-size: 20px; }
         .bonus-desc { font-size: 11px; }
         .rate-amount, .rate-percent { font-size: 14px; }
     }
-    ]]></b:skin>
+    </style>
 </head>
 
 <body>
-    <div id='coins-container'/>
+    <div id="coins-container"></div>
 
-    <a class='support-btn' href='https://t.me/TOP5_Customer_Servics' target='_blank'>
-        <i class='fas fa-headset'/>
+    <a class="support-btn" href="https://t.me/TOP5_Customer_Servics" target="_blank">
+        <i class="fas fa-headset"></i>
     </a>
 
     <header>
-        <div class='wrapper'>
-            <div class='header-container'>
-                <div class='logo-container'>
-                    <i class='fas fa-chart-line logo-icon'/>
-                    <div><span class='logo-text-top'>TOP</span><span class='logo-text-5'>5</span></div>
+        <div class="wrapper">
+            <div class="header-container">
+                <div class="logo-container">
+                    <i class="fas fa-chart-line logo-icon"></i>
+                    <div><span class="logo-text-top">TOP</span><span class="logo-text-5">5</span></div>
                 </div>
-                <div class='header-info'>
-                    <div class='info-box'><i class='fas fa-server'/> STATUS: <span style='color:#22c55e'>ONLINE</span></div>
-                    <div class='info-box'><i class='far fa-clock'/> TIME: <span id='live-time'>00:00:00</span></div>
+                <div class="header-info">
+                    <div class="info-box"><i class="fas fa-server"></i> STATUS: <span style="color:#22c55e">ONLINE</span></div>
+                    <div class="info-box"><i class="far fa-clock"></i> TIME: <span id="live-time">00:00:00</span></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class='ticker-bar'>
-        <div class='ticker-wrapper'>
-            <!-- تم تكرار العناصر لضمان حلقة متصلة مثل القطار -->
-            <div class='ticker-item'><i class='fas fa-rocket t-blue'/> WELCOME TO TOP 5 OFFICIAL</div>
-            <div class='ticker-item'><i class='fas fa-download t-green'/> NEW APK VERSION 2.0.0.7</div>
-            <div class='ticker-item'><i class='fas fa-crown t-gold'/> VIP REWARDS ACTIVE</div>
-            <div class='ticker-item'><i class='fas fa-shield-alt t-purple'/> 100% SECURE SYSTEM</div>
-            <div class='ticker-item'><i class='fas fa-bolt t-red'/> FAST WITHDRAWAL</div>
-            <!-- نسخة مكررة للحركة المستمرة -->
-            <div class='ticker-item'><i class='fas fa-rocket t-blue'/> WELCOME TO TOP 5 OFFICIAL</div>
-            <div class='ticker-item'><i class='fas fa-download t-green'/> NEW APK VERSION 2.0.0.7</div>
-            <div class='ticker-item'><i class='fas fa-crown t-gold'/> VIP REWARDS ACTIVE</div>
-            <div class='ticker-item'><i class='fas fa-shield-alt t-purple'/> 100% SECURE SYSTEM</div>
-            <div class='ticker-item'><i class='fas fa-bolt t-red'/> FAST WITHDRAWAL</div>
+    <div class="ticker-bar">
+        <div class="ticker-wrapper">
+            <div class="ticker-item"><i class="fas fa-rocket t-blue"></i> WELCOME TO TOP 5 OFFICIAL</div>
+            <div class="ticker-item"><i class="fas fa-download t-green"></i> NEW APK VERSION 2.0.0.7</div>
+            <div class="ticker-item"><i class="fas fa-crown t-gold"></i> VIP REWARDS ACTIVE</div>
+            <div class="ticker-item"><i class="fas fa-shield-alt t-purple"></i> 100% SECURE SYSTEM</div>
+            <div class="ticker-item"><i class="fas fa-bolt t-red"></i> FAST WITHDRAWAL</div>
+            <!-- Duplicate for infinite loop -->
+            <div class="ticker-item"><i class="fas fa-rocket t-blue"></i> WELCOME TO TOP 5 OFFICIAL</div>
+            <div class="ticker-item"><i class="fas fa-download t-green"></i> NEW APK VERSION 2.0.0.7</div>
+            <div class="ticker-item"><i class="fas fa-crown t-gold"></i> VIP REWARDS ACTIVE</div>
+            <div class="ticker-item"><i class="fas fa-shield-alt t-purple"></i> 100% SECURE SYSTEM</div>
+            <div class="ticker-item"><i class="fas fa-bolt t-red"></i> FAST WITHDRAWAL</div>
         </div>
     </div>
-  
 
-    <section class='download-section'>
-        <div class='wrapper'>
-            <div class='online-badge'>
-                <div class='dot'/><span class='online-count-text' id='user-count'>10,000 Players</span>
+    <section class="download-section">
+        <div class="wrapper">
+            <div class="online-badge">
+                <div class="dot"></div><span class="online-count-text" id="user-count">10,000 Players</span>
             </div>
 
-            <h2 class='section-title'>
-                <i class='fas fa-coins' style='color:#ffd700'/> Download Official App <i class='fas fa-dollar-sign' style='color:#10B981'/>
+            <h2 class="section-title">
+                <i class="fas fa-coins" style="color:#ffd700"></i> Download Official App <i class="fas fa-dollar-sign" style="color:#10B981"></i>
             </h2>
-          
-          
-          
-            
-            <div class='btn-container'>
-                <!-- زر الأندرويد -->
-                <a class='dl-btn' href='https://github.com/Hossam48o/top5_platform/releases/download/v2.0.0.6/top5_platform.apk' onclick='startDownload(event, this)'>
-                    <i class='fas fa-dollar-sign btn-bg-icon'/><i class='fab fa-android'/>
+
+            <div class="btn-container">
+                <a class="dl-btn" href="https://github.com/Hossam48o/top5_platform/releases/download/v2.0.0.6/top5_platform.apk" onclick="startDownload(event, this)">
+                    <i class="fas fa-dollar-sign btn-bg-icon"></i><i class="fab fa-android"></i>
                     <span>Download for</span><b>ANDROID ( APK-V2.0.7 )</b>
                 </a>
 
-              
-              
-                <!-- زر الآيفون المعدل -->
-                <a class='dl-btn' href='javascript:void(0)' onclick='iphoneComingSoon(event)'>
-                    <i class='fas fa-coins btn-bg-icon'/><i class='fab fa-apple'/>
+                <a class="dl-btn" href="javascript:void(0)" onclick="iphoneComingSoon(event)">
+                    <i class="fas fa-coins btn-bg-icon"></i><i class="fab fa-apple"></i>
                     <span>Download for</span><b>IPHONE / IOS</b>
                 </a>
-              
- 
-              
-              
-              
-                <!-- زر الويندوز -->
-              <a class='dl-btn' href='https://github.com/Hossam48o/top5.exe/releases/download/v2.0.0.6/TOP.5.exe' onclick='startDownload(event, this)'>
-                    <i class='fas fa-file-invoice-dollar btn-bg-icon'/><i class='fab fa-windows'/>
-                    <span>Download for</span><b>WINDOWS ( PC-V2.0.7 </b>
+
+                <a class="dl-btn" href="https://github.com/Hossam48o/top5.exe/releases/download/v2.0.0.6/TOP.5.exe" onclick="startDownload(event, this)">
+                    <i class="fas fa-file-invoice-dollar btn-bg-icon"></i><i class="fab fa-windows"></i>
+                    <span>Download for</span><b>WINDOWS ( PC-V2.0.7 )</b>
                 </a>
             </div>
-          
-          
-          
-         
 
-          
-            <div class='downloads-sim'>
-                <i class='fas fa-cloud-download-alt' style='color:#22c55e; margin-right:8px;'/>
-                <span id='dl-count'>80,289</span> <span style='margin-left:5px;'>Total Downloads</span>
+            <div class="downloads-sim">
+                <i class="fas fa-cloud-download-alt" style="color:#22c55e; margin-right:8px;"></i>
+                <span id="dl-count">80,289</span> <span style="margin-left:5px;">Total Downloads</span>
             </div>
 
-          
-            <!-- كارت مكافأة الإيداع -->
-            <div class='bonus-card'>
-                <div class='bonus-content-left'>
-                    <span class='special-offer-tag'>SPECIAL OFFER</span>
-                    <h3 class='bonus-title'>DEPOSIT BONUS</h3>
-                    <p class='bonus-desc'>Get up to 50% extra bonus</p>
+            <div class="bonus-card">
+                <div class="bonus-content-left">
+                    <span class="special-offer-tag">SPECIAL OFFER</span>
+                    <h3 class="bonus-title">DEPOSIT BONUS</h3>
+                    <p class="bonus-desc">Get up to 50% extra bonus</p>
                 </div>
-                <div class='bonus-rates'>
-                    <div class='rate-row'><span class='rate-amount'>50$</span><span class='rate-percent'>+10%</span></div>
-                    <div class='rate-row'><span class='rate-amount'>100$</span><span class='rate-percent'>+20%</span></div>
-                    <div class='rate-row'><span class='rate-amount'>300$</span><span class='rate-percent'>+35%</span></div>
-                    <div class='rate-row'><span class='rate-amount gold'>500$+</span><span class='rate-percent'>+50%</span></div>
+                <div class="bonus-rates">
+                    <div class="rate-row"><span class="rate-amount">50$</span><span class="rate-percent">+10%</span></div>
+                    <div class="rate-row"><span class="rate-amount">100$</span><span class="rate-percent">+20%</span></div>
+                    <div class="rate-row"><span class="rate-amount">300$</span><span class="rate-percent">+35%</span></div>
+                    <div class="rate-row"><span class="rate-amount gold">500$+</span><span class="rate-percent">+50%</span></div>
                 </div>
             </div>
 
-          
-            <!-- كارت السحوبات -->
-            <div class='payouts-card'>
-                <div class='payouts-header'><i class='fas fa-history'/> RECENT PAYOUTS</div>
-                <div class='payouts-list' id='payouts-list'>
-                    <div class='payout-row'><span>User: player***72</span><span class='payout-val'>$45.00 <i class='fas fa-check-circle'/></span></div>
-                    <div class='payout-row'><span>User: win_pro***</span><span class='payout-val'>$120.00 <i class='fas fa-check-circle'/></span></div>
-                    <div class='payout-row'><span>User: king_t5***</span><span class='payout-val'>$350.00 <i class='fas fa-check-circle'/></span></div>
+            <div class="payouts-card">
+                <div class="payouts-header"><i class="fas fa-history"></i> RECENT PAYOUTS</div>
+                <div class="payouts-list" id="payouts-list">
+                    <div class="payout-row"><span>User: player***72</span><span class="payout-val">$45.00 <i class="fas fa-check-circle"></i></span></div>
+                    <div class="payout-row"><span>User: win_pro***</span><span class="payout-val">$120.00 <i class="fas fa-check-circle"></i></span></div>
+                    <div class="payout-row"><span>User: king_t5***</span><span class="payout-val">$350.00 <i class="fas fa-check-circle"></i></span></div>
                 </div>
             </div>
 
-            <!-- السوشيال ميديا -->
-            <div class='social-section'>
-                <p style='color:#64748b; font-weight:bold;'>Follow us on social media</p>
-                <div class='social-icons-row'>
-                    <a class='s-icon telegram' href='https://t.me/TOP5_Platform'><i class='fab fa-telegram-plane'/></a>
-                    <a class='s-icon tiktok' href='https://www.tiktok.com/@top_5.2026' target='_blank'><i class='fab fa-tiktok'/></a>
+            <div class="social-section">
+                <p style="color:#64748b; font-weight:bold;">Follow us on social media</p>
+                <div class="social-icons-row">
+                    <a class="s-icon telegram" href="https://t.me/TOP5_Platform"><i class="fab fa-telegram-plane"></i></a>
+                    <a class="s-icon tiktok" href="https://www.tiktok.com/@top_5.2026" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class='wrapper' style='display:none;'><b:section id='main-posts' showaddelement='true' title='Main Content'/></div>
-
     <footer>
-        <div class='wrapper'>
-            <div class='footer-logo'>TOP 5 PLATFORM 2024</div>
+        <div class="wrapper">
+            <div class="footer-logo">TOP 5 PLATFORM 2024</div>
             <p>&#169; All Rights Reserved. Start winning today!</p>
         </div>
     </footer>
 
-    <script type='text/javascript'>
-    //<![CDATA[
-
-    // وظيفة زر الآيفون
+    <script>
     function iphoneComingSoon(event) {
         event.preventDefault();
         alert("COMING SOON!\nThe iPhone version is currently under development. Stay tuned!");
     }
 
-    // وظيفة العداد المتزامن (يزيد 1 كل 10 دقائق)
     function syncDownloadCounter() {
-        const baseCount = 80289; // الرقم الأساسي
-        const startDate = new Date("2024-05-01T00:00:00Z"); // تاريخ مرجعي ثابت لجميع المستخدمين
+        const baseCount = 80289;
+        const startDate = new Date("2024-05-01T00:00:00Z");
         const now = new Date();
-        
-        // حساب فرق الدقائق بين التاريخ المرجعي والآن
         const diffInMinutes = Math.floor((now - startDate) / (1000 * 60));
-        
-        // زيادة الرقم واحد كل 10 دقائق
         const incrementalAdd = Math.floor(diffInMinutes / 10);
-        
         const finalCount = baseCount + incrementalAdd;
         const el = document.getElementById('dl-count');
         if(el) el.innerText = finalCount.toLocaleString();
     }
-    
-    // تشغيل العداد فور التحميل وتحديثه دورياً
+
     syncDownloadCounter();
-    setInterval(syncDownloadCounter, 60000); // يفحص كل دقيقة لتحديث الرقم إذا لزم الأمر
+    setInterval(syncDownloadCounter, 60000);
 
     function startDownload(event, btn) {
         const downloadUrl = btn.getAttribute('href');
@@ -346,7 +307,6 @@
         const el = document.getElementById('user-count');
         if(el) el.innerText = count.toLocaleString() + ' Players Online';
     }, 4000);
-    //]]>
     </script>
 </body>
 </html>
