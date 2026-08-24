@@ -117,54 +117,6 @@
     /* -----------------------------------------------------------
        7. الفوتر والأنيميشن (Footer & Animations)
     ----------------------------------------------------------- */
-    /* -----------------------------------------------------------
-       7. الشريط الجانبي للروابط (Social Sidebar)
-    ----------------------------------------------------------- */
-    .side-social-bar {
-        position: fixed;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        z-index: 1001;
-        background: rgba(30, 41, 59, 0.8);
-        backdrop-filter: blur(10px);
-        border-radius: 0 15px 15px 0;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        border-left: none;
-        padding: 10px 5px;
-    }
-    .side-item {
-        position: relative;
-        width: 45px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        transition: 0.3s;
-        margin: 5px 0;
-    }
-    .side-item:hover { color: #10B981; transform: translateX(5px); }
-    .side-item .tooltip {
-        position: absolute;
-        left: 55px;
-        background: #10B981;
-        color: white;
-        padding: 5px 15px;
-        border-radius: 8px;
-        font-size: 12px;
-        white-space: nowrap;
-        opacity: 0;
-        pointer-events: none;
-        transition: 0.3s;
-        font-weight: bold;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    .side-item:hover .tooltip { opacity: 1; left: 60px; }
 
     /* قسم الروابط الكامل (Full Links Section) */
     .links-grid {
@@ -213,18 +165,6 @@
 <body>
     <div id="coins-container"></div>
 
-    <!-- Floating Social Sidebar -->
-    <div class="side-social-bar">
-        <a class="side-item" href="https://t.me/TOP5_Platform" target="_blank"><i class="fab fa-telegram"></i><span class="tooltip">Daily Signals - القناة اليومية</span></a>
-        <a class="side-item" href="https://t.me/malika_win_signal" target="_blank"><i class="fas fa-gem"></i><span class="tooltip">Malika Signals - قسم مليكة</span></a>
-        <a class="side-item" href="https://t.me/top5_signal_to_send" target="_blank"><i class="fas fa-signal"></i><span class="tooltip">Top 5 Signals - قسم توب فايف</span></a>
-        <a class="side-item" href="https://t.me/top5_fifa_tread" target="_blank"><i class="fas fa-futbol"></i><span class="tooltip">Football Betting - مراهنات الكرة</span></a>
-        <a class="side-item" href="https://www.facebook.com/profile.php?id=61592928230901" target="_blank"><i class="fab fa-facebook"></i><span class="tooltip">Facebook - فيسبوك</span></a>
-        <a class="side-item" href="https://www.instagram.com/top5_platform/" target="_blank"><i class="fab fa-instagram"></i><span class="tooltip">Instagram - انستجرام</span></a>
-        <a class="side-item" href="https://www.youtube.com/@Your_information48_" target="_blank"><i class="fab fa-youtube"></i><span class="tooltip">YouTube - يوتيوب</span></a>
-        <a class="side-item" href="https://t.me/TOP5_Customer_Servics" target="_blank"><i class="fas fa-headset"></i><span class="tooltip">Support - خدمة العملاء</span></a>
-    </div>
-
     <a class="support-btn" href="https://t.me/TOP5_Customer_Servics" target="_blank">
         <i class="fas fa-headset"></i>
     </a>
@@ -270,7 +210,7 @@
                 <i class="fas fa-coins" style="color:#ffd700"></i> Download Official App <i class="fas fa-dollar-sign" style="color:#10B981"></i>
             </h2>
             <p style="color: #94a3b8; font-weight: bold; margin-bottom: 20px;">
-                <i class="fas fa-network-wired" style="color:#3b82f6"></i> <span style="color:#ef4444">TRON (TRC20)</span> | USDT & TRX
+                <span style="color:#ef4444">TRON (TRC20)</span> | USDT & TRX
             </p>
 
             <div class="btn-container">
@@ -373,6 +313,13 @@
                             <p>قناتنا التعليمية على يوتيوب - شروحات ودروس مجانية</p>
                         </div>
                     </a>
+                    <a href="https://www.tiktok.com/@top5_platform" class="link-card" target="_blank">
+                        <i class="fab fa-tiktok" style="color: #fff;"></i>
+                        <div class="link-info">
+                            <h4>TikTok Account</h4>
+                            <p>حسابنا الرسمي على تيك توك - فيديوهات وتحديثات سريعة</p>
+                        </div>
+                    </a>
                     <a href="https://t.me/TOP5_Customer_Servics" class="link-card" target="_blank">
                         <i class="fas fa-headset" style="color: #3b82f6;"></i>
                         <div class="link-info">
@@ -387,7 +334,7 @@
                 <p style="color:#64748b; font-weight:bold;">Follow us on social media</p>
                 <div class="social-icons-row">
                     <a class="s-icon telegram" href="https://t.me/TOP5_Platform"><i class="fab fa-telegram-plane"></i></a>
-                    <a class="s-icon tiktok" href="https://www.tiktok.com/@top_5.2026" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a class="s-icon tiktok" href="https://www.tiktok.com/@top5_platform" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
