@@ -408,5 +408,45 @@
         if(el) el.innerText = count.toLocaleString() + ' Players Online';
     }, 4000);
     </script>
+    <script>
+  // 1. قراءة كود الإحالة من شريط عنوان المتصفح (?ref=XXXX)
+  const urlParams = new URLSearchParams(window.location.search);
+  const referralCode = urlParams.get('ref');
+
+  if (referralCode) {
+      console.log("تم رصد كود الإحالة:", referralCode);
+      
+      // 2. جلب عنوان الـ IP الخاص بجهاز المستخدم الحالي تلقائياً وبأمان
+      fetch('https://api.ipify.org?format=json')
+          .then(response => response.json())
+          .then(data => {
+              const userIP = data.ip;
+              
+              if (userIP) {
+                  // 3. إرسال الـ IP وكود الإحالة فوراً إلى جدول ip_referrals في Supabase
+                  const supabaseUrl = 'https://gvhiehxgxqspntngbcvv.supabase.co'; 
+                  const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd2aGllaHhneHFzcG50bmdiY3Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM1NDU3MzQsImV4cCI6MjA3OTEyMTczNH0.7yzQYyVshDM5Wiu26p4ROV5je9mA0Pos6DlFtqBKxfU';
+
+                  fetch(`${supabaseUrl}/rest/v1/ip_referrals`, {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                          'apikey': supabaseAnonKey,
+                          'Authorization': `Bearer ${supabaseAnonKey}`
+                      },
+                      body: JSON.stringify({
+                          ip_address: userIP,
+                          referral_code: referralCode
+                      })
+                  })
+                  .then(res => {
+                      console.log("تمت عملية الربط الأمني للـ IP بنجاح في الخلفية.");
+                  })
+                  .catch(err => console.error("خطأ في إرسال البيانات للـ Supabase:", err));
+              }
+          })
+          .catch(err => console.error("خطأ في جلب الـ IP الخاص بالمستخدم:", err));
+  }
+</script>
 </body>
 </html>
