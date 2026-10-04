@@ -352,8 +352,9 @@
               
               if (userIP) {
                   // 3. إرسال الـ IP وكود الإحالة فوراً إلى جدول ip_referrals في Supabase
-                  const supabaseUrl = 'https://gvhiehxgxqspntngbcvv.supabase.co'; 
-                  const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd2aGllaHhneHFzcG50bmdiY3Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM1NDU3MzQsImV4cCI6MjA3OTEyMTczNH0.7yzQYyVshDM5Wiu26p4ROV5je9mA0Pos6DlFtqBKxfU';
+                  const supabaseUrl = 'https://vjsgzngtxmnpctmfuqch.supabase.co'; 
+                  const supabaseAnonKey ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZqc2d6bmd0eG1ucGN0bWZ1cWNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAwOTE1NzQsImV4cCI6MjEwNTY2NzU3NH0.RE1qf1JAeeNDykhZioJ7vsIjaHMqa59jpLsw7aonLOI',
+
 
                   fetch(`${supabaseUrl}/rest/v1/ip_referrals`, {
                       method: 'POST',
