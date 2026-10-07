@@ -336,7 +336,7 @@
         if(el) el.innerText = count.toLocaleString() + ' Players Online';
     }, 4000);
     </script>
-    <script>
+<script>
   // 1. قراءة كود الإحالة من شريط عنوان المتصفح (?ref=XXXX)
   const urlParams = new URLSearchParams(window.location.search);
   const referralCode = urlParams.get('ref');
@@ -352,8 +352,8 @@
               
               if (userIP) {
                   // 3. إرسال الـ IP وكود الإحالة فوراً إلى جدول ip_referrals في Supabase
-                  const supabaseUrl = 'https://vjsgzngtxmnpctmfuqch.supabase.co'; 
-                  const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZqc2d6bmd0eG1ucGN0bWZ1cWNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAwOTE1NzQsImV4cCI6MjEwNTY2NzU3NH0.RE1qf1JAeeNDykhZioJ7vsIjaHMqa59jpLsw7aonLOI';
+                  const supabaseUrl = 'https://hqvlgioizjoibnfhrzei.supabase.co'; 
+                  const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhxdmxnaW9pempvaWJuZmhyemVpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzMjQyMDAsImV4cCI6MjEwNjkwMDIwMH0.vjIycPRleGf2nFp0amMp4WS9WsTCh2Ag2XtIdDbBjWI';
 
                   fetch(`${supabaseUrl}/rest/v1/ip_referrals`, {
                       method: 'POST',
